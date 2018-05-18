@@ -20,7 +20,7 @@ import random
 from ai import tah
 from ai import tah_pocitace
 
-def vyhodnot(pole):
+def vyhodnot(pole): #vyhodnocuje pole!
     if 'xxx' in pole:
         print('Vyhral x')
         return False
