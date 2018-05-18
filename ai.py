@@ -1,8 +1,10 @@
 import random
 
 # Hloupa strategie pro pocitac
+
 # To bude brnkacka vyhrat :) ..
-# Uz si brousim klavesnici!
+# Teda doufam, snad neni random lepsi nez ja
+
 
 def tah_pocitace(pole):
     pozice = random.randrange(len(pole))
