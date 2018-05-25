@@ -9,6 +9,11 @@ import random
 
 
 def tah_pocitace(pole):
+    """
+
+    :param pole: (str) pole, kde se ma hrat
+    :return: (str) zmenene pole
+    """
     pozice = random.randrange(len(pole))
     symbol = 'o'
     if pole[pozice] == '-':

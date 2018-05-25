@@ -5,19 +5,18 @@ from ai_vlada import tah_pocitace
 def vyhodnot(pole): #vyhodnocuje pole!
     if 'xxx' in pole:
         print('Vyhral x')
-        return False
+        return 'x'
     elif 'ooo' in pole:
         print('Vyhral o')
-        return False
+        return 'o'
     else:
-        return True
+        return False
 
 
 def tah_hrace(pole):
     symbol = 'x'
     try:
-        pozice = 2
-        # pozice = int(input('Na jakou pozici chces hrat?: '))
+        pozice = int(input('Na jakou pozici chces hrat?: '))
     except ValueError:
         return tah_hrace(pole)
     if pole[pozice] == '-':
@@ -28,19 +27,21 @@ def tah_hrace(pole):
 
 
 
-def piskvorky1D(delka_pole=20):
+def piskvorky1D(strategie1, strategie2, delka_pole=20):
     pole = delka_pole*'-'
     stav = vyhodnot(pole)
-    while stav:
-        pole = tah_hrace(pole)
+    while not stav:
+        pole = strategie1(pole)
         print(pole)
         stav = vyhodnot(pole)
 
-        pole = tah_pocitace(pole)
+        pole = strategie2(pole)
         print(pole)
         stav = vyhodnot(pole)
+    return stav
 
-piskvorky1D()
+
+print(piskvorky1D(tah_hrace, tah_pocitace))
 
 
 
