@@ -14,4 +14,11 @@ def tah_pocitace(pole):
     return tah(pole, pozice, symbol)
 
 def tah(pole, pozice, symbol):
+    """
+    Vymeni znak na dane pozici v poli za symbol.
+    :param pole:
+    :param pozice:
+    :param symbol:
+    :return:
+    """
     return pole[:pozice] + symbol + pole[pozice+1:]
