@@ -6,7 +6,7 @@ import random
 # Teda doufam, snad neni random lepsi nez ja
 
 
-# Sazím tři unce stříbra a čtyři hřivny zlata na tento AI
+# Sazím tři unce stříbra a čtyři hřivny zlata na tento AI, nebo radši šest
 
 # !!!!!!!!!!!
 
