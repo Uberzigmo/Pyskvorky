@@ -10,6 +10,7 @@ import random
 
 # !!!!!!!!!!!
 
+# Jen jsem pridal komentar.
 
 def tah_pocitace(pole):
     pozice = random.randrange(len(pole))
