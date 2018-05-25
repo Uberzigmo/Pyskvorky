@@ -6,7 +6,7 @@ import random
 # Teda doufam, snad neni random lepsi nez ja
 
 # !!!!!!!!!!!
-
+# Je tu malo vykricniku
 
 def tah_pocitace(pole):
     """
