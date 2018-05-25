@@ -4,6 +4,7 @@ import random
 
 # To bude brnkacka vyhrat :) ..
 # Teda doufam, snad neni random lepsi nez ja
+# Sazím tři unce stříbra a čtyři hřivny zlata na tento AI
 
 # !!!!!!!!!!!
 
