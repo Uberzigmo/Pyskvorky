@@ -1,6 +1,6 @@
 import random
 from ai_1 import tah
-from ai_vlada import tah_pocitace
+from ai_2 import tah_pocitace
 
 def vyhodnot(pole): #vyhodnocuje pole!
     if 'xxx' in pole:
