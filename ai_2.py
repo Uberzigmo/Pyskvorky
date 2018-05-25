@@ -14,7 +14,7 @@ import random
 
 def tah_pocitace(pole):
     pozice = random.randrange(len(pole))
-    symbol = 'o'
+    symbol = 'x'
     if pole[pozice] == '-':
         return tah(pole, pozice, symbol)
     else:

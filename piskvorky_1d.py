@@ -3,7 +3,7 @@ from ai_1 import tah
 from ai_2 import tah_pocitace
 
 def vyhodnot(pole): #vyhodnocuje pole!
-    if 'xxx' in pole:
+    if "xxx" in pole:
         print('Vyhral x')
         return 'x'
     elif 'ooo' in pole:
@@ -41,7 +41,7 @@ def piskvorky1D(strategie1, strategie2, delka_pole=20):
     return stav
 
 
-print(piskvorky1D(tah_hrace, tah_pocitace))
+#print(piskvorky1D(tah_hrace, tah_pocitace))
 
 
 
