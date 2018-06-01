@@ -14,12 +14,14 @@ def tah_pocitace(pole):
     :param pole: (str) pole, kde se ma hrat
     :return: (str) zmenene pole
     """
-    pozice = random.randrange(len(pole))
+
     symbol = 'o'
-    if pole[pozice] == '-':
-        return tah(pole, pozice, symbol)
-    else:
-        tah_pocitace(pole)
+    while True:
+        pozice = random.randrange(len(pole))
+        if pole[pozice] is '-':
+            return tah(pole, pozice, symbol)
+
+
 
 def tah(pole, pozice, symbol):
     """
@@ -30,3 +32,4 @@ def tah(pole, pozice, symbol):
     :return: None
     """
     return pole[:pozice] + symbol + pole[pozice+1:]
+
