@@ -12,8 +12,7 @@ import random
 
 # Jen jsem pridal komentar.
 
-def tah_pocitace(pole):
-    symbol = 'x'
+def tah_pocitace(pole, symbol):
     while True:
         pozice = random.randrange(len(pole))
         if pole[pozice] == '-':
