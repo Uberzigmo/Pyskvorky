@@ -44,7 +44,7 @@ def piskvorky1D(strategie1, symbol_1, strategie2, symbol_2, delka_pole=20):
             print("Vyhrava: {}".format((symbol_2,'   ', pole)))
             break
         if vyhodnot(pole) == ".":
-            # print("Remiza:   {}".format(pole))
+            print("Remiza:   {}".format(pole))
             break
     stav = vyhodnot(pole)
     return stav
