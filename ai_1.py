@@ -8,14 +8,13 @@ import random
 # !!!!!!!!!!!
 
 
-def tah_pocitace(pole):
+def tah_pocitace(pole, symbol):
     """
 
     :param pole: (str) pole, kde se ma hrat
     :return: (str) zmenene pole
     """
 
-    symbol = 'o'
     while True:
         pozice = random.randrange(len(pole))
         if pole[pozice] is '-':
